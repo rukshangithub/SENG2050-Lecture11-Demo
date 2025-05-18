@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: lecture11demo
+#JWT configurations
+    jwt: 
+        secret: ${JWT_SECRET}
+        access-token-expiration: 300000 # 5 minutes
+        refresh-token-expiration: 3600000 # 1 hour
+    profiles:
+        active: dev

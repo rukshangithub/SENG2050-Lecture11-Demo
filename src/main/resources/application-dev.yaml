@@ -1,0 +1,16 @@
+spring:
+    jpa:
+        show-sql: true
+    datasource:
+        url: jdbc:mysql://localhost:3306/unix
+        username: UniX_admin
+        password: P@ssword    
+# Enable HTTPS
+server:
+    port: 8443
+    ssl:
+        enabled: true
+        key-store: classpath:serverkey.jks
+        key-store-password: P@ssword
+        key-store-type: JKS
+        key-alias: myserver
